@@ -80,6 +80,8 @@ describe('request-country', () => {
             2,
             LAST_RESPONSE_TIME_KEY
         );
+        expect(fetch).toHaveBeenCalledTimes(1);
+        expect(fetch).toHaveBeenCalledWith('https://ip2c.org/s');
         expect(defaultOptions.saveData).toHaveBeenCalledTimes(2);
         expect(defaultOptions.saveData).toHaveBeenNthCalledWith(
             1,
