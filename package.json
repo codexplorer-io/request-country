@@ -1,0 +1,9 @@
+{
+  "name": "@codexporer.io/request-country",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "peerDependencies": {
+    "lodash": "*",
+    "jest-fetch-mock": "*"
+  }
+}
