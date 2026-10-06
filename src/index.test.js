@@ -29,7 +29,6 @@ describe('request-country', () => {
     beforeAll(() => {
         enableFetchMocks();
         jest.useFakeTimers();
-        // eslint-disable-next-line func-names
         global.Date = function (arg) {
             if (arg) {
                 this.getTime = mockGetPreviousTime;
@@ -43,7 +42,6 @@ describe('request-country', () => {
 
     beforeEach(() => {
         jest.isolateModules(() => {
-            // eslint-disable-next-line global-require
             const module = require('./index');
             initialize = module.initialize;
             requestCountry = module.requestCountry;
